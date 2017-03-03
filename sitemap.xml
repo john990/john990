@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://iandroid.io/2014/08/06/android-%E5%AE%9E%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/</loc>
+    
+    <lastmod>2017-03-03T11:09:12.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://iandroid.io/2014/03/02/markdown-online/</loc>
     
     <lastmod>2017-03-03T10:58:08.000Z</lastmod>
@@ -12,13 +19,6 @@
     <loc>http://iandroid.io/2017/03/03/Gradle-%E7%AE%80%E4%BB%8B/</loc>
     
     <lastmod>2017-03-03T10:52:44.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://iandroid.io/2014/08/06/android-%E5%AE%9E%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/</loc>
-    
-    <lastmod>2017-03-03T10:51:26.000Z</lastmod>
     
   </url>
   
