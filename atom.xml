@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Hexo</title>
+  <title>iAndroid</title>
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="http://iandroid.io/"/>
   <updated>2017-03-03T04:43:52.000Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>http://iandroid.io/</id>
   
   <author>
-    <name>John Doe</name>
+    <name>Kai Wang</name>
     
   </author>
   
@@ -17,8 +17,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://yoursite.com/2017/03/03/hello-world/"/>
-    <id>http://yoursite.com/2017/03/03/hello-world/</id>
+    <link href="http://iandroid.io/2017/03/03/hello-world/"/>
+    <id>http://iandroid.io/2017/03/03/hello-world/</id>
     <published>2017-03-03T04:43:52.000Z</published>
     <updated>2017-03-03T04:43:52.000Z</updated>
     
