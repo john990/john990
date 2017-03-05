@@ -61,7 +61,7 @@
     <link href="http://iandroid.io/2014/08/06/android-%E5%AE%9E%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/"/>
     <id>http://iandroid.io/2014/08/06/android-实用小技巧/</id>
     <published>2014-08-06T06:16:43.000Z</published>
-    <updated>2017-03-03T11:09:12.000Z</updated>
+    <updated>2017-03-05T03:30:41.000Z</updated>
     
     <content type="html"><![CDATA[<p><a href="http://developer.android.com/reference/android/text/TextUtils.html#isEmpty(java.lang.CharSequence\" target="_blank" rel="external">TextUtils.isEmpty()</a>) 非常好用的判断字符串是否为 “” 或 null的方式</p>
 <hr>
@@ -79,7 +79,10 @@
 <hr>
 <p><a href="http://developer.android.com/reference/android/app/Activity.html#onWindowFocusChanged\(boolean\" target="_blank" rel="external">Activity.onWindowFocusChanged</a>) 官方的解释：This is the best indicator of whether this activity is visible to the user. 就是说这时候页面已经对用户可见，组件已经绘制完成，一般在这里获取view的width和height都是正确值.需要注意的是每次窗口焦点改变（onPause、onResume）之后都会被调用.</p>
 <hr>
-<p><a href="http://developer.android.com/reference/android/app/Activity.html#onSaveInstanceState\(android.os.Bundle\" target="_blank" rel="external">Activity.onSaveInstanceState (Bundle outState)</a>)保存activity状态的方法。<br>关于为什么不在onStop或其他生命周期方法里保存，官方文档给出了解释：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">One example of when &#123;@link #onPause&#125; and &#123;@link #onStop&#125; is called and not </div><div class="line">this method is when a user navigates back from activity </div><div class="line">B to activity A: there is no need to call</div><div class="line"> &#123;@link #onSaveInstanceState&#125; on B because </div><div class="line"> that particular instance will never be restored, </div><div class="line"> so the system avoids calling it.  An example when &#123;@link #onPause&#125;</div><div class="line">  is called and not &#123;@link #onSaveInstanceState&#125; is </div><div class="line">  when activity B is launched in front of activity </div><div class="line">  A: the system may avoid calling &#123;@link #onSaveInstanceState&#125; </div><div class="line">  on activity A if it isn&apos;t killed during the lifetime of</div><div class="line">   B since the state of the user interface of A will stay intact.</div></pre></td></tr></table></figure></p>
+<p><a href="http://developer.android.com/reference/android/app/Activity.html#onSaveInstanceState\(android.os.Bundle\" target="_blank" rel="external">Activity.onSaveInstanceState (Bundle outState)</a>)保存activity状态的方法。<br>关于为什么不在onStop或其他生命周期方法里保存，官方文档给出了解释：</p>
+<blockquote>
+<p>One example of when {@link #onPause} and {@link #onStop} is called and not this method is when a user navigates back from activity B to activity A: there is no need to call {@link #onSaveInstanceState} on B because that particular instance will never be restored, so the system avoids calling it.  An example when {@link #onPause} is called and not {@link #onSaveInstanceState} is when activity B is launched in front of activity A: the system may avoid calling {@link #onSaveInstanceState} on activity A if it isn’t killed during the lifetime of B since the state of the user interface of A will stay intact.</p>
+</blockquote>
 <p>就是onSaveInstanceState只在需要的时候被调用，不被调用的例子：<br>1.按返回键<br>2.仍然与用户有交互</p>
 <hr>
 ]]></content>
