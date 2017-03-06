@@ -61,11 +61,11 @@
     <link href="http://iandroid.io/2014/08/06/android-%E5%AE%9E%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/"/>
     <id>http://iandroid.io/2014/08/06/android-实用小技巧/</id>
     <published>2014-08-06T06:16:43.000Z</published>
-    <updated>2017-03-05T03:30:41.000Z</updated>
+    <updated>2017-03-06T01:58:07.000Z</updated>
     
-    <content type="html"><![CDATA[<p><a href="http://developer.android.com/reference/android/text/TextUtils.html#isEmpty(java.lang.CharSequence\" target="_blank" rel="external">TextUtils.isEmpty()</a>) 非常好用的判断字符串是否为 “” 或 null的方式</p>
+    <content type="html"><![CDATA[<p><a href="http://developer.android.com/reference/android/text/TextUtils.html#isEmpty(java.lang.CharSequence" target="_blank" rel="external">TextUtils.isEmpty()</a>) 非常好用的判断字符串是否为 “” 或 null的方式</p>
 <hr>
-<p><a href="http://developer.android.com/reference/android/view/LayoutInflater.html#from(android.content.Context\" target="_blank" rel="external">LayoutInflater.from()</a>) 比较方便的加载layout的方法</p>
+<p><a href="http://developer.android.com/reference/android/view/LayoutInflater.html#from(android.content.Context" target="_blank" rel="external">LayoutInflater.from()</a>) 比较方便的加载layout的方法</p>
 <hr>
 <p><a href="http://developer.android.com/reference/android/app/Fragment.html#setArguments%28android.os.Bundle%29" target="_blank" rel="external">Fragment.setArguments()</a> 给fragment传递参数最好的方式，这样传递的参数会贯穿整个生命周期，即使recreate</p>
 <hr>
@@ -75,11 +75,11 @@
 <hr>
 <p><a href="http://developer.android.com/reference/android/widget/FrameLayout.html#attr_android:foreground" target="_blank" rel="external">FrameLayout.foreground</a> 非常方便的设置前景色的方法，例如图片点击时的蒙版效果</p>
 <hr>
-<p><a href="http://developer.android.com/reference/android/content/res/Resources.html#getString\(int, java.lang.Object...\" target="_blank" rel="external">Resources.getString (int id, Object… formatArgs)</a>) 很方便的替换字符串中的占位符，内部调用的是String.format(mConfiguration.locale, raw, formatArgs);<br>例如：今天是%1$s号，温度是 %2$s    getString(id,”31”,”15”)</p>
+<p><a href="http://developer.android.com/reference/android/content/res/Resources.html#getString(int, java.lang.Object..." target="_blank" rel="external">Resources.getString (int id, Object… formatArgs)</a>) 很方便的替换字符串中的占位符，内部调用的是String.format(mConfiguration.locale, raw, formatArgs);<br>例如：今天是%1$s号，温度是 %2$s    getString(id,”31”,”15”)</p>
 <hr>
-<p><a href="http://developer.android.com/reference/android/app/Activity.html#onWindowFocusChanged\(boolean\" target="_blank" rel="external">Activity.onWindowFocusChanged</a>) 官方的解释：This is the best indicator of whether this activity is visible to the user. 就是说这时候页面已经对用户可见，组件已经绘制完成，一般在这里获取view的width和height都是正确值.需要注意的是每次窗口焦点改变（onPause、onResume）之后都会被调用.</p>
+<p><a href="http://developer.android.com/reference/android/app/Activity.html#onWindowFocusChanged(boolean" target="_blank" rel="external">Activity.onWindowFocusChanged</a>) 官方的解释：This is the best indicator of whether this activity is visible to the user. 就是说这时候页面已经对用户可见，组件已经绘制完成，一般在这里获取view的width和height都是正确值.需要注意的是每次窗口焦点改变（onPause、onResume）之后都会被调用.</p>
 <hr>
-<p><a href="http://developer.android.com/reference/android/app/Activity.html#onSaveInstanceState\(android.os.Bundle\" target="_blank" rel="external">Activity.onSaveInstanceState (Bundle outState)</a>)保存activity状态的方法。<br>关于为什么不在onStop或其他生命周期方法里保存，官方文档给出了解释：</p>
+<p><a href="http://developer.android.com/reference/android/app/Activity.html#onSaveInstanceState(android.os.Bundle" target="_blank" rel="external">Activity.onSaveInstanceState (Bundle outState)</a>)保存activity状态的方法。<br>关于为什么不在onStop或其他生命周期方法里保存，官方文档给出了解释：</p>
 <blockquote>
 <p>One example of when {@link #onPause} and {@link #onStop} is called and not this method is when a user navigates back from activity B to activity A: there is no need to call {@link #onSaveInstanceState} on B because that particular instance will never be restored, so the system avoids calling it.  An example when {@link #onPause} is called and not {@link #onSaveInstanceState} is when activity B is launched in front of activity A: the system may avoid calling {@link #onSaveInstanceState} on activity A if it isn’t killed during the lifetime of B since the state of the user interface of A will stay intact.</p>
 </blockquote>
@@ -89,7 +89,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;&lt;a href=&quot;http://developer.android.com/reference/android/text/TextUtils.html#isEmpty(java.lang.CharSequence\&quot; target=&quot;_blank&quot; rel=&quot;externa
+      &lt;p&gt;&lt;a href=&quot;http://developer.android.com/reference/android/text/TextUtils.html#isEmpty(java.lang.CharSequence&quot; target=&quot;_blank&quot; rel=&quot;external
     
     </summary>
     
