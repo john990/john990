@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://iandroid.io/"/>
-  <updated>2017-03-07T09:39:35.000Z</updated>
+  <updated>2017-03-07T09:40:49.000Z</updated>
   <id>http://iandroid.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://iandroid.io/2017/03/03/Gradle-%E7%AE%80%E4%BB%8B/"/>
     <id>http://iandroid.io/2017/03/03/Gradle-简介/</id>
     <published>2017-03-03T10:15:16.000Z</published>
-    <updated>2017-03-07T09:39:35.000Z</updated>
+    <updated>2017-03-07T09:40:49.000Z</updated>
     
     <content type="html"><![CDATA[<p>Gradle 是Android Studio 的构建和依赖管理工具，本篇文章主要介绍Gradle 在Android Studio中的结构和作用。</p>
 <h2 id="Android-Studio-中的-gradle-文件"><a href="#Android-Studio-中的-gradle-文件" class="headerlink" title="Android Studio 中的 gradle 文件"></a>Android Studio 中的 gradle 文件</h2><p>创建自定义构建配置需要对一个或多个构建配置文件（或 build.gradle 文件）进行更改。<br>这些纯文本文件使用域特定语言 (DSL) 以 Groovy 语言描述和操作构建逻辑，后者是一种适用于 Java 虚拟机 (JVM) 的动态语言。<br> Android Plugin for Gradle 已经引入了需要的大多数 DSL 元素，所以无需了解 Groovy 便可开始配置构建。<br> 如果需了解有关 Android 插件 DSL 的更多信息，请阅读 <a href="http://google.github.io/android-gradle-dsl/current/index.html" target="_blank" rel="external">DSL 参考文档</a>。<br>开始新项目时，Android Studio 会自动创建其中的部分文件，如图画框的部分。</p>
@@ -46,8 +46,7 @@
 </blockquote>
 <h3 id="Gradle-属性文件"><a href="#Gradle-属性文件" class="headerlink" title="Gradle 属性文件"></a>Gradle 属性文件</h3><p>Gradle 还包括两个属性文件，位于项目根目录，可用于指定适用于 Gradle 构建工具包本身的设置：</p>
 <p>gradle.properties<br>您可以在其中配置项目范围 Gradle 设置，例如 Gradle 后台进程的最大堆大小。如需了解详细信息，请参阅构建环境。<br>local.properties<br>为构建系统配置本地环境属性，例如 SDK 安装路径。由于该文件的内容由 Android Studio 自动生成并且专用于本地开发者环境，因此您不应手动修改该文件，或将其纳入您的版本控制系统。</p>
-<p>Gradle 的基础介绍就先到这里，后续会写Gradle 相关的更多文章。</p>
-]]></content>
+<h4 id="Gradle-的基础介绍就先到这里，后续会写Gradle-相关的更多文章。"><a href="#Gradle-的基础介绍就先到这里，后续会写Gradle-相关的更多文章。" class="headerlink" title="Gradle 的基础介绍就先到这里，后续会写Gradle 相关的更多文章。"></a>Gradle 的基础介绍就先到这里，后续会写Gradle 相关的更多文章。</h4>]]></content>
     
     <summary type="html">
     
@@ -93,11 +92,11 @@
     <link href="http://iandroid.io/2014/08/06/android-%E5%AE%9E%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/"/>
     <id>http://iandroid.io/2014/08/06/android-实用小技巧/</id>
     <published>2014-08-06T06:16:43.000Z</published>
-    <updated>2017-03-06T01:58:07.000Z</updated>
+    <updated>2017-03-07T09:45:16.000Z</updated>
     
-    <content type="html"><![CDATA[<p><a href="http://developer.android.com/reference/android/text/TextUtils.html#isEmpty(java.lang.CharSequence" target="_blank" rel="external">TextUtils.isEmpty()</a>) 非常好用的判断字符串是否为 “” 或 null的方式</p>
+    <content type="html"><![CDATA[<p><a href="http%3A%2F%2Fdeveloper.android.com%2Freference%2Fandroid%2Ftext%2FTextUtils.html%23isEmpty%28java.lang.CharSequence%29">TextUtils.isEmpty()</a> 非常好用的判断字符串是否为 “” 或 null的方式</p>
 <hr>
-<p><a href="http://developer.android.com/reference/android/view/LayoutInflater.html#from(android.content.Context" target="_blank" rel="external">LayoutInflater.from()</a>) 比较方便的加载layout的方法</p>
+<p><a href="http%3A%2F%2Fdeveloper.android.com%2Freference%2Fandroid%2Fview%2FLayoutInflater.html%23from%28android.content.Context%29">LayoutInflater.from()</a> 比较方便的加载layout的方法</p>
 <hr>
 <p><a href="http://developer.android.com/reference/android/app/Fragment.html#setArguments%28android.os.Bundle%29" target="_blank" rel="external">Fragment.setArguments()</a> 给fragment传递参数最好的方式，这样传递的参数会贯穿整个生命周期，即使recreate</p>
 <hr>
@@ -109,9 +108,9 @@
 <hr>
 <p><a href="http://developer.android.com/reference/android/content/res/Resources.html#getString(int, java.lang.Object..." target="_blank" rel="external">Resources.getString (int id, Object… formatArgs)</a>) 很方便的替换字符串中的占位符，内部调用的是String.format(mConfiguration.locale, raw, formatArgs);<br>例如：今天是%1$s号，温度是 %2$s    getString(id,”31”,”15”)</p>
 <hr>
-<p><a href="http://developer.android.com/reference/android/app/Activity.html#onWindowFocusChanged(boolean" target="_blank" rel="external">Activity.onWindowFocusChanged</a>) 官方的解释：This is the best indicator of whether this activity is visible to the user. 就是说这时候页面已经对用户可见，组件已经绘制完成，一般在这里获取view的width和height都是正确值.需要注意的是每次窗口焦点改变（onPause、onResume）之后都会被调用.</p>
+<p><a href="http%3A%2F%2Fdeveloper.android.com%2Freference%2Fandroid%2Fapp%2FActivity.html%23onWindowFocusChanged%28boolean%29">Activity.onWindowFocusChanged</a> 官方的解释：This is the best indicator of whether this activity is visible to the user. 就是说这时候页面已经对用户可见，组件已经绘制完成，一般在这里获取view的width和height都是正确值.需要注意的是每次窗口焦点改变（onPause、onResume）之后都会被调用.</p>
 <hr>
-<p><a href="http://developer.android.com/reference/android/app/Activity.html#onSaveInstanceState(android.os.Bundle" target="_blank" rel="external">Activity.onSaveInstanceState (Bundle outState)</a>)保存activity状态的方法。<br>关于为什么不在onStop或其他生命周期方法里保存，官方文档给出了解释：</p>
+<p><a href="http%3A%2F%2Fdeveloper.android.com%2Freference%2Fandroid%2Fapp%2FActivity.html%23onSaveInstanceState%28android.os.Bundle%29">Activity.onSaveInstanceState (Bundle outState)</a>保存activity状态的方法。<br>关于为什么不在onStop或其他生命周期方法里保存，官方文档给出了解释：</p>
 <blockquote>
 <p>One example of when {@link #onPause} and {@link #onStop} is called and not this method is when a user navigates back from activity B to activity A: there is no need to call {@link #onSaveInstanceState} on B because that particular instance will never be restored, so the system avoids calling it.  An example when {@link #onPause} is called and not {@link #onSaveInstanceState} is when activity B is launched in front of activity A: the system may avoid calling {@link #onSaveInstanceState} on activity A if it isn’t killed during the lifetime of B since the state of the user interface of A will stay intact.</p>
 </blockquote>
@@ -121,7 +120,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;&lt;a href=&quot;http://developer.android.com/reference/android/text/TextUtils.html#isEmpty(java.lang.CharSequence&quot; target=&quot;_blank&quot; rel=&quot;external
+      &lt;p&gt;&lt;a href=&quot;http%3A%2F%2Fdeveloper.android.com%2Freference%2Fandroid%2Ftext%2FTextUtils.html%23isEmpty%28java.lang.CharSequence%29&quot;&gt;TextUtil
     
     </summary>
     
