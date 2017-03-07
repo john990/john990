@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://iandroid.io/"/>
-  <updated>2017-03-07T08:58:00.000Z</updated>
+  <updated>2017-03-07T09:39:35.000Z</updated>
   <id>http://iandroid.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://iandroid.io/2017/03/03/Gradle-%E7%AE%80%E4%BB%8B/"/>
     <id>http://iandroid.io/2017/03/03/Gradle-简介/</id>
     <published>2017-03-03T10:15:16.000Z</published>
-    <updated>2017-03-07T08:58:00.000Z</updated>
+    <updated>2017-03-07T09:39:35.000Z</updated>
     
     <content type="html"><![CDATA[<p>Gradle 是Android Studio 的构建和依赖管理工具，本篇文章主要介绍Gradle 在Android Studio中的结构和作用。</p>
 <h2 id="Android-Studio-中的-gradle-文件"><a href="#Android-Studio-中的-gradle-文件" class="headerlink" title="Android Studio 中的 gradle 文件"></a>Android Studio 中的 gradle 文件</h2><p>创建自定义构建配置需要对一个或多个构建配置文件（或 build.gradle 文件）进行更改。<br>这些纯文本文件使用域特定语言 (DSL) 以 Groovy 语言描述和操作构建逻辑，后者是一种适用于 Java 虚拟机 (JVM) 的动态语言。<br> Android Plugin for Gradle 已经引入了需要的大多数 DSL 元素，所以无需了解 Groovy 便可开始配置构建。<br> 如果需了解有关 Android 插件 DSL 的更多信息，请阅读 <a href="http://google.github.io/android-gradle-dsl/current/index.html" target="_blank" rel="external">DSL 参考文档</a>。<br>开始新项目时，Android Studio 会自动创建其中的部分文件，如图画框的部分。</p>
@@ -44,6 +44,8 @@
 <blockquote>
 <p>这个gradle 文件和上面的app文件夹中的差不多，主要是第一行，声明这个module 是一个library。</p>
 </blockquote>
+<h3 id="Gradle-属性文件"><a href="#Gradle-属性文件" class="headerlink" title="Gradle 属性文件"></a>Gradle 属性文件</h3><p>Gradle 还包括两个属性文件，位于项目根目录，可用于指定适用于 Gradle 构建工具包本身的设置：</p>
+<p>gradle.properties<br>您可以在其中配置项目范围 Gradle 设置，例如 Gradle 后台进程的最大堆大小。如需了解详细信息，请参阅构建环境。<br>local.properties<br>为构建系统配置本地环境属性，例如 SDK 安装路径。由于该文件的内容由 Android Studio 自动生成并且专用于本地开发者环境，因此您不应手动修改该文件，或将其纳入您的版本控制系统。</p>
 <p>Gradle 的基础介绍就先到这里，后续会写Gradle 相关的更多文章。</p>
 ]]></content>
     
